@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EchoBag – Pack Smarter. Stress Less.</title>
+  <meta name="description" content="EchoBag is a smart travel packing assistant that creates personalized, weather‑aware checklists so you never forget essentials again." />
+  <meta name="theme-color" content="#4EA8DE" />
+  <meta property="og:title" content="EchoBag – Pack Smarter. Stress Less." />
+  <meta property="og:description" content="Personalized, weather‑aware packing lists for every trip." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/echobag-social.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/echobag-icon-180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/echobag-icon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/echobag-icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/echobag-icon-512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand:#4EA8DE;
+      --accent:#FB7185;
+      --sand:#F4E1B3;
+      --text:#1F2937;
+      --bg:#F9FAFB;
+      --white:#FFFFFF;
+    }
+    html,body{background:var(--bg); color:var(--text);}  
+    .font-display{font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;}
+    .font-body{font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;}
+    .btn{ @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 text-white shadow hover:opacity-90 transition; }
+    .btn-brand{ background: var(--brand); }
+    .btn-accent{ background: var(--accent); }
+    .badge{ @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium; background: #E6F4FB; color:#0F5B86; }
+    .card{ @apply rounded-3xl bg-white shadow-lg; }
+    .grad{
+      background: linear-gradient(135deg, #4EA8DE 0%, #76C7D9 30%, #FFA7A7 75%, #FB7185 100%);
+    }
+  </style>
+  <!-- TODO: Upload your icon assets to /assets and keep the filenames used above.
+       Recommended: echobag-icon-32.png, -180.png, -192.png, -512.png and echobag-social.png (1200x630). -->
+</head>
+<body class="font-body">
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="/assets/echobag-icon-512.png" alt="EchoBag icon" class="w-9 h-9 rounded-2xl shadow object-cover" />
+        <div>
+          <div class="font-display text-xl">EchoBag</div>
+          <div class="text-xs text-slate-500 -mt-1">Pack Smarter. Stress Less.</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#features" class="hover:text-slate-800">Features</a>
+        <a href="#how" class="hover:text-slate-800">How it works</a>
+        <a href="#pricing" class="hover:text-slate-800">Pricing</a>
+        <a href="#faq" class="hover:text-slate-800">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#pricing" class="btn btn-accent">Get Premium</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="mx-auto max-w-7xl px-6 py-20">
+    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">EchoBag Landing Page</h1>
+    <p class="mt-4 text-lg text-slate-700">This is a starter file. Replace placeholder sections with the full landing page code from your assistant once you’re ready to go live.</p>
+  </section>
+</body>
+</html>
